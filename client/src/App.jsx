@@ -19,7 +19,9 @@ function App() {
     setOffices([]);
 
     try {
-      const response = await fetch(`/api/pincode/${pincode}`);
+      const response = await fetch(
+  `https://bangalore-pincode-explorer-5k67.onrender.com/api/pincode/${pincode}`
+);
 
       const data = await response.json();
 
